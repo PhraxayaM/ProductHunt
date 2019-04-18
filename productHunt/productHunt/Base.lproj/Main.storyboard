@@ -32,7 +32,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="peh-3F-Eer" userLabel="Container view">
                                                     <rect key="frame" x="15" y="11" width="345" height="228"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" ambiguous="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhv-4S-Xez" userLabel="Name">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhv-4S-Xez" userLabel="Name">
                                                             <rect key="frame" x="8" y="8" width="186.5" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -56,13 +56,13 @@
                                                             </subviews>
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tagline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBE-e3-W68">
-                                                            <rect key="frame" x="0.0" y="213.5" width="38.5" height="14.5"/>
+                                                            <rect key="frame" x="0.0" y="223" width="38.5" height="14.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="WKa-Bu-yto">
-                                                            <rect key="frame" x="8" y="30" width="329" height="186"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="WKa-Bu-yto">
+                                                            <rect key="frame" x="8" y="34" width="329" height="186"/>
                                                             <accessibility key="accessibilityConfiguration" identifier="postCell"/>
                                                         </imageView>
                                                     </subviews>
@@ -75,10 +75,10 @@
                                                         <constraint firstItem="bhv-4S-Xez" firstAttribute="top" secondItem="peh-3F-Eer" secondAttribute="topMargin" id="LwB-Jt-KWA"/>
                                                         <constraint firstItem="6Hd-GG-eCo" firstAttribute="top" secondItem="peh-3F-Eer" secondAttribute="topMargin" id="TMx-xf-7jP"/>
                                                         <constraint firstItem="6Hd-GG-eCo" firstAttribute="leading" secondItem="bhv-4S-Xez" secondAttribute="trailing" constant="12" id="Z9e-Vm-9LA"/>
-                                                        <constraint firstAttribute="bottom" secondItem="ZBE-e3-W68" secondAttribute="bottom" id="fib-Q0-Was"/>
                                                         <constraint firstItem="WKa-Bu-yto" firstAttribute="leading" secondItem="peh-3F-Eer" secondAttribute="leading" constant="8" id="hVr-0N-qj7"/>
                                                         <constraint firstItem="ZBE-e3-W68" firstAttribute="leading" secondItem="peh-3F-Eer" secondAttribute="leading" id="rcI-HO-NzI"/>
                                                         <constraint firstItem="WKa-Bu-yto" firstAttribute="top" secondItem="bhv-4S-Xez" secondAttribute="bottom" constant="5.5" id="uT5-6h-6cJ"/>
+                                                        <constraint firstItem="ZBE-e3-W68" firstAttribute="top" secondItem="WKa-Bu-yto" secondAttribute="bottom" constant="3" id="vif-l9-ODu"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -93,6 +93,7 @@
                                             <outlet property="commentsCountLabel" destination="F9d-Qc-zfU" id="eJa-5y-8Ul"/>
                                             <outlet property="imageView" destination="WKa-Bu-yto" id="y9a-BC-cZQ"/>
                                             <outlet property="nameLabel" destination="bhv-4S-Xez" id="Tgz-4y-xfD"/>
+                                            <outlet property="previewImageView" destination="WKa-Bu-yto" id="Hqg-pg-E3M"/>
                                             <outlet property="taglineLabel" destination="ZBE-e3-W68" id="lCI-TP-RfF"/>
                                             <outlet property="votesCountLabel" destination="kNc-T8-0ZA" id="qVR-gu-l9o"/>
                                         </connections>

@@ -35,5 +35,6 @@ class PostTableViewCell: UITableViewCell {
         guard let post = post else { return }
         // assign the placeholder image to the UI element
         previewImageView.image = UIImage(named: "placeholder")
+//        print("test")
     }
 }
