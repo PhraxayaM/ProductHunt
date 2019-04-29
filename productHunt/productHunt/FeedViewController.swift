@@ -9,7 +9,8 @@
 import UIKit
 
 class FeedViewController: UIViewController {
-
+    
+    
     @IBOutlet weak var feedTableView: UITableView!
     // Array of Post objects to simulate real data coming in
     // Make sure each property that we're assigning to a UI element has a value for each mock Post.
@@ -18,7 +19,7 @@ class FeedViewController: UIViewController {
             feedTableView.reloadData()
         }
     }
-    
+    var networkManager = NetworkManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,8 +27,8 @@ class FeedViewController: UIViewController {
         feedTableView.dataSource = self
         feedTableView.delegate = self
     
-    updateFeed()
-}
+        updateFeed()
+    }
     func updateFeed() {
         // call our network manager's getPosts method to update our feed with posts
         networkManager.getPosts() { result in
@@ -36,7 +37,7 @@ class FeedViewController: UIViewController {
     }
 
 }
-var networkManager = NetworkManager()
+
 
 // MARK: UITableViewDataSource
 extension FeedViewController: UITableViewDataSource {

@@ -13,7 +13,7 @@ class NetworkManager {
     let urlSession = URLSession.shared
     
     var baseURL = "https://api.producthunt.com/v1/"
-    var token = "replace-me-with-your-token-from-product-hunt-api-dashboard-🙏"
+    var token = "52a5221cba795ad8501e70990e21a0b025138c49e8dcce6400737c03a17f55fe"
     
     
     
@@ -57,9 +57,9 @@ class NetworkManager {
             DispatchQueue.main.async {
                 completion(posts)
             }
-            task.resume()
+            
         }
-        
+        task.resume()
     }
     
     
