@@ -13,52 +13,48 @@ class FeedViewController: UIViewController {
     @IBOutlet weak var feedTableView: UITableView!
     // Array of Post objects to simulate real data coming in
     // Make sure each property that we're assigning to a UI element has a value for each mock Post.
-    var mockData: [Post] = {
-        var meTube = Post(id: 0, name: "MeTube", tagline: "Stream videos for free!", votesCount: 25, commentsCount: 4)
-        var boogle = Post(id: 1, name: "Boogle", tagline: "Search anything!", votesCount: 1000, commentsCount: 50)
-        var meTunes = Post(id: 2, name: "meTunes", tagline: "Listen to any song!", votesCount: 25000, commentsCount: 590)
-
-        return [meTube, boogle, meTunes]
-    }()
-    var networkManager = NetworkManager()
+    var posts: [Post] = [] {
+        didSet {
+            feedTableView.reloadData()
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         feedTableView.dataSource = self
         feedTableView.delegate = self
+    
+    updateFeed()
+}
+    func updateFeed() {
+        // call our network manager's getPosts method to update our feed with posts
+        networkManager.getPosts() { result in
+            self.posts = result
+        }
     }
 
-
 }
-
+var networkManager = NetworkManager()
 
 // MARK: UITableViewDataSource
 extension FeedViewController: UITableViewDataSource {
-    // Determines how many cells will be shown on the table view.
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mockData.count
+        // return the actual number of posts we receive
+        return posts.count
     }
     
-    // Creates and configures each cell.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // Grab an available cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! PostTableViewCell
         
-        // Grab a post from our "data"
-        let post = mockData[indexPath.row]
-        // Assign a post to that cell
+        // retrieve from the actual posts, and not mock data
+        let post = posts[indexPath.row]
         cell.post = post
-        
         return cell
     }
     
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        // dequeue and return an available cell, instead of creating a new cell
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! PostTableViewCell
-//
-//        return cell
-//    }
+
 }
 // MARK: UITableViewDelegate
 extension FeedViewController: UITableViewDelegate {

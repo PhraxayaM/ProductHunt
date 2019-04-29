@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CD35A3722265555700D38413 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD35A3712265555700D38413 /* PostTableViewCell.swift */; };
+		CD800AA622777A8A0039254D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD800AA522777A8A0039254D /* NetworkManager.swift */; };
 		CDCF37C3222DC50C00827E0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCF37C2222DC50C00827E0F /* AppDelegate.swift */; };
 		CDCF37C5222DC50C00827E0F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCF37C4222DC50C00827E0F /* FeedViewController.swift */; };
 		CDCF37C8222DC50C00827E0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCF37C6222DC50C00827E0F /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		CD35A3712265555700D38413 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		CD800AA522777A8A0039254D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CDCF37BF222DC50C00827E0F /* productHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = productHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDCF37C2222DC50C00827E0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDCF37C4222DC50C00827E0F /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				CDCF37C2222DC50C00827E0F /* AppDelegate.swift */,
 				CDCFC555222DE24A0087C9F8 /* Post.swift */,
 				CDCF37C4222DC50C00827E0F /* FeedViewController.swift */,
+				CD800AA522777A8A0039254D /* NetworkManager.swift */,
 				CDCF37C6222DC50C00827E0F /* Main.storyboard */,
 				CDCF37C9222DC51100827E0F /* Assets.xcassets */,
 				CDCF37CB222DC51100827E0F /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				CDCFC556222DE24A0087C9F8 /* Post.swift in Sources */,
 				CDCF37C5222DC50C00827E0F /* FeedViewController.swift in Sources */,
+				CD800AA622777A8A0039254D /* NetworkManager.swift in Sources */,
 				CDCF37C3222DC50C00827E0F /* AppDelegate.swift in Sources */,
 				CD35A3722265555700D38413 /* PostTableViewCell.swift in Sources */,
 			);
