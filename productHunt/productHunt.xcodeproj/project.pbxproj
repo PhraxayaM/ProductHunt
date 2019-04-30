@@ -11,6 +11,7 @@
 		CD800AA622777A8A0039254D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD800AA522777A8A0039254D /* NetworkManager.swift */; };
 		CD800AAA2277AC360039254D /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD800AA92277AC360039254D /* CommentsViewController.swift */; };
 		CD800AAC2277B3480039254D /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD800AAB2277B3480039254D /* CommentTableViewCell.swift */; };
+		CD800AAE2278BAD70039254D /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD800AAD2278BAD70039254D /* Comment.swift */; };
 		CDCF37C3222DC50C00827E0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCF37C2222DC50C00827E0F /* AppDelegate.swift */; };
 		CDCF37C5222DC50C00827E0F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCF37C4222DC50C00827E0F /* FeedViewController.swift */; };
 		CDCF37C8222DC50C00827E0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCF37C6222DC50C00827E0F /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		CD800AA522777A8A0039254D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CD800AA92277AC360039254D /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
 		CD800AAB2277B3480039254D /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		CD800AAD2278BAD70039254D /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		CDCF37BF222DC50C00827E0F /* productHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = productHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDCF37C2222DC50C00827E0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDCF37C4222DC50C00827E0F /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				CD800AA92277AC360039254D /* CommentsViewController.swift */,
 				CDCF37C2222DC50C00827E0F /* AppDelegate.swift */,
 				CDCFC555222DE24A0087C9F8 /* Post.swift */,
+				CD800AAD2278BAD70039254D /* Comment.swift */,
 				CDCF37C4222DC50C00827E0F /* FeedViewController.swift */,
 				CD800AAB2277B3480039254D /* CommentTableViewCell.swift */,
 				CD800AA522777A8A0039254D /* NetworkManager.swift */,
@@ -153,6 +156,7 @@
 				CDCFC556222DE24A0087C9F8 /* Post.swift in Sources */,
 				CDCF37C5222DC50C00827E0F /* FeedViewController.swift in Sources */,
 				CD800AAA2277AC360039254D /* CommentsViewController.swift in Sources */,
+				CD800AAE2278BAD70039254D /* Comment.swift in Sources */,
 				CD800AA622777A8A0039254D /* NetworkManager.swift in Sources */,
 				CD800AAC2277B3480039254D /* CommentTableViewCell.swift in Sources */,
 				CDCF37C3222DC50C00827E0F /* AppDelegate.swift in Sources */,
